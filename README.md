@@ -10,9 +10,6 @@ Site Oficial do Unifi ID-SSO: https://account.ui.com<br>
 Blog Oficial do Unifi Brasil: https://medium.com/ubntbr<br>
 Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q<br>
 
-## **Unifi UAP utilizado nos vídeos**
-![Unifi UAP](swx-uap.png)
-
 A Ubiquiti lançou um script para utilização e automatização do processo de instalação da ferramenta, hoje vamos ver como fazemos a instalação dessa tool excelente para profissionais.
 Através de um Script fica bem fácel de fazer a instalação. O Script tem suporte para as seguintes distribuições, inclusive, algumas não diretamente derivadas no Ubuntu:
 | Ubuntu Precise Pangolin ( 12.04 )
