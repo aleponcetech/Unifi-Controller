@@ -1,16 +1,8 @@
-## 💰 Ajude a continuar fazendo vídeos gratuitos para o Canal, acessando o link de doação do PagSeguro: https://app.picpay.com/user/seuti
+## 💰 Ajude a continuar fazendo vídeos gratuitos para o Canal https://app.picpay.com/user/seuti
 
 Ale Ponce<br>
 Redes Sociais: https://linkme.bio/aleponce<br>
 
-## **Links Oficiais do Ubiquiti Unifi Brasil:**
-Site Oficial do Ubiquiti Unifi: https://unifi-network.ui.com/<br>
-Site Oficial do Unifi Software: https://www.ui.com/download/unifi<br>
-Site Oficial do Unifi ID-SSO: https://account.ui.com<br>
-Blog Oficial do Unifi Brasil: https://medium.com/ubntbr<br>
-Canal do YouTUBE Ubiquiti BR: https://www.youtube.com/channel/UCb_mHuP7q75OrckBcNn3p2Q<br>
-
-A Ubiquiti lançou um script para utilização e automatização do processo de instalação da ferramenta, hoje vamos ver como fazemos a instalação dessa tool excelente para profissionais.
 Através de um Script fica bem fácel de fazer a instalação. O Script tem suporte para as seguintes distribuições, inclusive, algumas não diretamente derivadas no Ubuntu:<br>
 | Ubuntu Precise Pangolin ( 12.04 )<br>
 | Ubuntu Trusty Tahr ( 14.04 )<br>
