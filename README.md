@@ -44,7 +44,8 @@ Através de um Script fica bem fácel de fazer a instalação. O Script tem supo
 ## **📡 COMO instalar o UNIFI CONTROLLER no Ubuntu Server 21.04**
 
 Abra o seu terminal, copie e cole os seguintes comandos:<br>
-sudo apt-get update; sudo apt-get install ca-certificates wget -y<br>
+sudo apt-get update<br>
+sudo apt-get install ca-certificates wget -y<br>
 sudo wget https://github.com/SeuTI/Unifi-Controller/blob/main/unifi-6.5.53.sh<br>
 sudo chmod +x unifi-6.5.53.sh<br>
 sudo ./unifi-6.5.53.sh<br>
