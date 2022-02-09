@@ -46,7 +46,7 @@ Através de um Script fica bem fácel de fazer a instalação. O Script tem supo
 Abra o seu terminal, copie e cole os seguintes comandos:<br>
 sudo apt-get update<br>
 sudo apt-get install ca-certificates wget -y<br>
-sudo wget https://github.com/SeuTI/Unifi-Controller/blob/main/unifi-6.5.53.sh<br>
+sudo wget https://github.com/SeuTI/Unifi-Controller/blob/main/unifi-X.X.X.sh<br>
 sudo chmod +x unifi-6.5.53.sh<br>
 sudo ./unifi-6.5.53.sh<br>
 
