@@ -5,8 +5,9 @@ Redes Sociais: https://linkme.bio/aleponce<br>
 
 Através de um Script fica bem fácel de fazer a instalação. O Script tem suporte para as seguintes distribuições, inclusive, algumas não diretamente derivadas no Ubuntu:<br>
 
-## **📡 COMO instalar o UNIFI CONTROLLER no Ubuntu Server 21.04**
-
+## **📡 COMO instalar o UNIFI CONTROLLER**
+<br>
+Testei no Ubuntu 20.04 e Debian 11
 Abra o seu terminal, copie e cole os seguintes comandos:<br>
 sudo apt-get update<br>
 sudo apt-get install ca-certificates wget -y<br>
