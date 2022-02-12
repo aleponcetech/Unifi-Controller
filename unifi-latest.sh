@@ -216,4 +216,4 @@ rm --force "$0" 2> /dev/null
 rm --force unifi-latest.sh* 2> /dev/null
 rm --force unifi-7.0.22.sh 2> /dev/null
 # shellcheck disable=SC2086
-wget -q https://get.glennr.nl/unifi/install/unifi-7.0.22.sh && bash unifi-7.0.22.sh ${script_options[@]}; exit 0
+wget -q https://github.com/SeuTI/Unifi-Controller/blob/main/unifi-7.0.22.sh && bash unifi-7.0.22.sh ${script_options[@]}; exit 0
