@@ -40,12 +40,9 @@
 
 ###################################################################################################################################################################################################
 
-# Version               | 5.1.4
 # Application version   | 7.0.22-8c2c64c175
-# Author                | Glenn Rietveld
-# Email                 | glennrietveld8@hotmail.nl
-# Website               | https://GlennR.nl
-
+# Social: https://linkme.bio/aleponce
+# Colabore: https://app.picpay.com/user/seuti
 ###################################################################################################################################################################################################
 #                                                                                                                                                                                                 #
 #                                                                                           Color Codes                                                                                           #
@@ -104,7 +101,7 @@ abort() {
   if [[ "${set_lc_all}" == 'true' ]]; then unset LC_ALL; fi
   echo -e "\\n\\n${RED}#########################################################################${RESET}\\n"
   echo -e "${WHITE_R}#${RESET} An error occurred. Aborting script..."
-  echo -e "${WHITE_R}#${RESET} Please contact Glenn R. (AmazedMender16) on the Community Forums!\\n"
+  echo -e "${WHITE_R}#${RESET} ....\\n"
   echo -e "${WHITE_R}#${RESET} Creating support file..."
   mkdir -p "/tmp/EUS/support" &> /dev/null
   if dpkg -l lsb-release 2> /dev/null | grep -iq "^ii\\|^hi"; then lsb_release -a &> "/tmp/EUS/support/lsb-release"; fi
@@ -146,13 +143,23 @@ fi
 
 script_logo() {
   cat << "EOF"
-
-  _______________ ___  _________  .___                 __         .__  .__   
-  \_   _____/    |   \/   _____/  |   | ____   _______/  |______  |  | |  |  
-   |    __)_|    |   /\_____  \   |   |/    \ /  ___/\   __\__  \ |  | |  |  
-   |        \    |  / /        \  |   |   |  \\___ \  |  |  / __ \|  |_|  |__
-  /_______  /______/ /_______  /  |___|___|  /____  > |__| (____  /____/____/
-          \/                 \/            \/     \/            \/           
+                                                                                            
+   SSSSSSSSSSSSSSS EEEEEEEEEEEEEEEEEEEEEEUUUUUUUU     UUUUUUUU     TTTTTTTTTTTTTTTTTTTTTTT        IIIIIIIIII
+ SS:::::::::::::::SE::::::::::::::::::::EU::::::U     U::::::U     T:::::::::::::::::::::T        I::::::::I
+S:::::SSSSSS::::::SE::::::::::::::::::::EU::::::U     U::::::U     T:::::::::::::::::::::T        I::::::::I
+S:::::S     SSSSSSSEE::::::EEEEEEEEE::::EUU:::::U     U:::::UU     T:::::TT:::::::TT:::::T        II::::::II
+S:::::S              E:::::E       EEEEEE U:::::U     U:::::U      TTTTTT  T:::::T  TTTTTT          I::::I  
+S:::::S              E:::::E              U:::::D     D:::::U              T:::::T                  I::::I  
+ S::::SSSS           E::::::EEEEEEEEEE    U:::::D     D:::::U              T:::::T                  I::::I  
+  SS::::::SSSSS      E:::::::::::::::E    U:::::D     D:::::U              T:::::T                  I::::I  
+    SSS::::::::SS    E:::::::::::::::E    U:::::D     D:::::U              T:::::T                  I::::I  
+       SSSSSS::::S   E::::::EEEEEEEEEE    U:::::D     D:::::U              T:::::T                  I::::I  
+            S:::::S  E:::::E              U:::::D     D:::::U              T:::::T                  I::::I  
+            S:::::S  E:::::E       EEEEEE U::::::U   U::::::U              T:::::T                  I::::I  
+SSSSSSS     S:::::SEE::::::EEEEEEEE:::::E U:::::::UUU:::::::U            TT:::::::TT              II::::::II
+S::::::SSSSSS:::::SE::::::::::::::::::::E  UU:::::::::::::UU             T:::::::::T       ...... I::::::::I
+S:::::::::::::::SS E::::::::::::::::::::E    UU:::::::::UU               T:::::::::T       .::::. I::::::::I
+ SSSSSSSSSSSSSSS   EEEEEEEEEEEEEEEEEEEEEE      UUUUUUUUU                 TTTTTTTTTTT       ...... IIIIIIIIII
 
 EOF
 }
@@ -195,11 +202,11 @@ help_script() {
     --email [argument]                      Specify what email address you want to use
                                             for renewal notifications.
                                             example:
-                                            --email glenn@glennr.nl
+                                            --email aleponce@seuti.net
     --fqdn [argument]                       Specify what domain name ( FQDN ) you want to use, you
                                             can specify multiple domain names with : as seperator, see
                                             the example below:
-                                            --fqdn glennr.nl:www.glennr.nl
+                                            --fqdn seuti.net:www.seuti.net
     --server-ip [argument]                  Specify the server IP address manually.
                                             example:
                                             --server-ip 1.1.1.1
@@ -438,7 +445,7 @@ christmass_new_year() {
   date_m=$(date '+%m' | sed "s/^0*//g; s/\.0*/./g")
   if [[ "${date_m}" == '12' && "${date_d}" -ge '18' && "${date_d}" -lt '26' ]]; then
     echo -e "\\n${WHITE_R}----${RESET}\\n"
-    echo -e "${WHITE_R}#${RESET} GlennR wishes you a Merry Christmas! May you be blessed with health and happiness!"
+    echo -e "${WHITE_R}#${RESET} Ale wishes you a Merry Christmas! May you be blessed with health and happiness!"
     christmas_message=true
   fi
   if [[ "${date_m}" == '12' && "${date_d}" -ge '24' && "${date_d}" -le '30' ]]; then
@@ -469,9 +476,8 @@ christmass_new_year() {
 author() {
   christmass_new_year
   if [[ "${new_year_message}" == 'true' || "${christmas_message}" == 'true' ]]; then echo -e "\\n${WHITE_R}----${RESET}\\n"; fi
-  echo -e "${WHITE_R}#${RESET} ${GRAY_R}Author   |  ${WHITE_R}Glenn R.${RESET}"
-  echo -e "${WHITE_R}#${RESET} ${GRAY_R}Email    |  ${WHITE_R}glennrietveld8@hotmail.nl${RESET}"
-  echo -e "${WHITE_R}#${RESET} ${GRAY_R}Website  |  ${WHITE_R}https://GlennR.nl${RESET}"
+  echo -e "${WHITE_R}#${RESET} ${GRAY_R}Author   |  ${WHITE_R}Ale${RESET}"
+  echo -e "${WHITE_R}#${RESET} ${GRAY_R}Website  |  ${WHITE_R}https://linkme.bio/aleponce${RESET}\\n\\n"
   echo -e "\\n\\n"
 }
 
@@ -513,7 +519,6 @@ if ! [[ "${os_codename}" =~ (precise|maya|trusty|qiana|rebecca|rafaela|rosa|xeni
   clear
   header_red
   echo -e "${WHITE_R}#${RESET} This script is not made for your OS.."
-  echo -e "${WHITE_R}#${RESET} Feel free to contact Glenn R. (AmazedMender16) on the Community Forums if you need help with installing your UniFi Network Application."
   echo -e ""
   echo -e "OS_CODENAME = ${os_codename}"
   echo -e ""
@@ -533,7 +538,7 @@ if ! grep -iq '^127.0.0.1.*localhost' /etc/hosts; then
           echo -e "${WHITE_R}#${RESET} Adding '127.0.0.1       localhost' to /etc/hosts"
           sed  -i '1i # ------------------------------' /etc/hosts
           sed  -i '1i 127.0.0.1       localhost' /etc/hosts
-          sed  -i '1i # Added by GlennR EUS script' /etc/hosts && echo -e "${WHITE_R}#${RESET} Done..\\n\\n"
+          sed  -i '1i # Added by Ale EUS script' /etc/hosts && echo -e "${WHITE_R}#${RESET} Done..\\n\\n"
           sleep 3;;
       [Nn]*) ;;
   esac
@@ -571,7 +576,7 @@ if dpkg -l | grep "unifi " | grep -q "^ii\\|^hi"; then
   case "$yes_no" in
       [Yy]*|"")
         rm --force "${script_location}" 2> /dev/null
-        wget -q "${wget_progress[@]}" https://get.glennr.nl/unifi/update/unifi-update.sh && bash unifi-update.sh; exit 0;;
+        wget -q "${wget_progress[@]}" https://github.com/SeuTI/Unifi-Controller/blob/main/unifi-update.sh && bash unifi-update.sh; exit 0;;
       [Nn]*) exit 0;;
   esac
 fi
@@ -579,7 +584,7 @@ fi
 dpkg_locked_message() {
   header_red
   echo -e "${WHITE_R}#${RESET} dpkg is locked.. Waiting for other software managers to finish!"
-  echo -e "${WHITE_R}#${RESET} If this is everlasting please contact Glenn R. (AmazedMender16) on the Community Forums!\\n\\n"
+  echo -e "${WHITE_R}#${RESET} ....\\n\\n"
   sleep 5
   if [[ -z "$dpkg_wait" ]]; then
     echo "glennr_lock_active" >> /tmp/glennr_lock
@@ -644,7 +649,7 @@ fi
 script_version_check() {
   if dpkg -l curl 2> /dev/null | awk '{print $1}' | grep -iq "^ii\\|^hi"; then
     version=$(grep -i "# Application version" "${script_location}" | head -n 1 | awk '{print $5}' | cut -d'-' -f1)
-    script_online_version_dots=$(curl "https://get.glennr.nl/unifi/install/unifi-${version}.sh" -s | grep "# Version" | head -n 1 | awk '{print $5}')
+    script_online_version_dots=$(curl "https://github.com/SeuTI/Unifi-Controller/blob/main/unifi-${version}.sh" -s | grep "# Version" | head -n 1 | awk '{print $5}')
     script_local_version_dots=$(grep "# Version" "${script_location}" | head -n 1 | awk '{print $5}')
     script_online_version="${script_online_version_dots//./}"
     script_local_version="${script_local_version_dots//./}"
@@ -657,7 +662,7 @@ script_version_check() {
       rm --force "${script_location}" 2> /dev/null
       rm --force "unifi-${version}.sh" 2> /dev/null
       # shellcheck disable=SC2068
-      wget -q "${wget_progress[@]}" "https://get.glennr.nl/unifi/install/unifi-${version}.sh" && bash "unifi-${version}.sh" ${script_options[@]}; exit 0
+      wget -q "${wget_progress[@]}" "https://github.com/SeuTI/Unifi-Controller/blob/main/unifi-${version}.sh" && bash "unifi-${version}.sh" ${script_options[@]}; exit 0
     fi
   else
     curl_missing=true
@@ -2344,7 +2349,7 @@ if [[ "${remote_installation}" == 'true' ]] && [[ "${script_option_skip}" != 'tr
   case "$yes_no" in
       [Yy]*|"")
           # shellcheck disable=SC2068
-          rm --force unifi-easy-encrypt.sh &> /dev/null; wget "${wget_progress[@]}" -q https://get.glennr.nl/unifi/extra/unifi-easy-encrypt.sh && bash unifi-easy-encrypt.sh ${le_script_options[@]};;
+          rm --force unifi-easy-encrypt.sh &> /dev/null; wget "${wget_progress[@]}" -q https://github.com/SeuTI/Unifi-Controller/blob/main/unifi-easy-encrypt.sh && bash unifi-easy-encrypt.sh ${le_script_options[@]};;
       [Nn]*) ;;
   esac
 fi
@@ -2389,9 +2394,9 @@ if dpkg -l | grep "unifi " | grep -q "^ii\\|^hi"; then
   fi
   echo -e "\\n"
   if [[ "${os_codename}" =~ (precise|maya|trusty|qiana|rebecca|rafaela|rosa) ]]; then
-    service unifi status | grep -q running && echo -e "${GREEN}#${RESET} UniFi is active ( running )" || echo -e "${RED}#${RESET} UniFi failed to start... Please contact Glenn R. (AmazedMender16) on the Community Forums!"
+    service unifi status | grep -q running && echo -e "${GREEN}#${RESET} UniFi is active ( running )" || echo -e "${RED}#${RESET} UniFi failed to start..."
   else
-    systemctl is-active -q unifi && echo -e "${GREEN}#${RESET} UniFi is active ( running )" || echo -e "${RED}#${RESET} UniFi failed to start... Please contact Glenn R. (AmazedMender16) on the Community Forums!"
+    systemctl is-active -q unifi && echo -e "${GREEN}#${RESET} UniFi is active ( running )" || echo -e "${RED}#${RESET} UniFi failed to start..."
   fi
   if [[ "${change_unifi_ports}" == 'true' ]]; then
     echo -e "\\n${WHITE_R}---- ${RED}NOTE${WHITE_R} ----${RESET}\\n\\n${WHITE_R}#${RESET} Your default application port(s) have changed!\\n"
@@ -2426,6 +2431,6 @@ if dpkg -l | grep "unifi " | grep -q "^ii\\|^hi"; then
 else
   header_red
   echo -e "\\n${RED}#${RESET} Failed to successfully install UniFi Network Application ${unifi_clean}"
-  echo -e "${RED}#${RESET} Please contact Glenn R. (AmazedMender16) on the Community Forums!${RESET}\\n\\n"
+  echo -e "${RED}#${RESET} ....${RESET}\\n\\n"
   remove_yourself
 fi
