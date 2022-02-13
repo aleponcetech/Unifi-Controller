@@ -1,4 +1,4 @@
-## 💰 Ajude a continuar fazendo vídeos gratuitos para o Canal https://app.picpay.com/user/seuti
+## 💰 Apoie o Canal https://app.picpay.com/user/seuti
 
 Ale Ponce<br>
 Redes Sociais: https://linkme.bio/aleponce<br>
