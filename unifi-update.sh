@@ -418,7 +418,7 @@ else
   rm --force /tmp/EUS/dpkg/lock 2> /dev/null
 fi
 
-script_online_version_dots=$(curl https://get.glennr.nl/unifi/update/unifi-update.sh -s | grep "# Version" | head -n 1 | awk '{print $4}')
+script_online_version_dots=$(curl https://github.com/SeuTI/Unifi-Controller/blob/main/unifi-update.sh -s | grep "# Version" | head -n 1 | awk '{print $4}')
 script_local_version_dots=$(grep "# Version" "${script_location}" | head -n 1 | awk '{print $4}')
 script_online_version="${script_online_version_dots//./}"
 script_local_version="${script_local_version_dots//./}"
@@ -432,7 +432,7 @@ if [[ "${script_online_version::3}" -gt "${script_local_version::3}" ]]; then
   rm --force "${script_location}" 2> /dev/null
   rm --force unifi-update.sh 2> /dev/null
   # shellcheck disable=SC2068
-  wget -q "${wget_progress[@]}" https://get.glennr.nl/unifi/update/unifi-update.sh && bash unifi-update.sh ${script_options[@]}; exit 0
+  wget -q "${wget_progress[@]}" https://github.com/SeuTI/Unifi-Controller/blob/main/unifi-update.sh && bash unifi-update.sh ${script_options[@]}; exit 0
 fi
 
 run_apt_get_update() {
