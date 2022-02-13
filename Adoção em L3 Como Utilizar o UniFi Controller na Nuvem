@@ -12,4 +12,5 @@ set-inform http://seutiserver.ml:8080/inform
 ficar offline ou com o status de “Adotando”.
 5. Uma vez que o dispositivo diz que está  adotando  ou fica offline, o que acontecer primeiro, emita o comando  set-inform descrito na etapa 3 novamente. 
 Isso salvará permanentemente o endereço informado e o dispositivo iniciará o provisionamento.
-IMPORTANTE: O comando set-inform deve ser emitido duas vezes conforme descrito na etapa 3 e na etapa 5 acima. Caso contrário, o dispositivo se desconectará após adotar.
+IMPORTANTE: O comando set-inform deve ser emitido duas vezes conforme descrito na etapa 3 e na etapa 5 acima. Caso contrário, o dispositivo se desconectará 
+após adotar.
