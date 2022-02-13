@@ -7,7 +7,7 @@ Através de um Script fica bem fácel de fazer a instalação. O Script tem supo
 
 ## **📡 COMO instalar o UNIFI CONTROLLER**
 <br>
-Testei no Ubuntu 20.04 e Debian 11<br>
+Testado no Ubuntu 21.04 e Debian 11<br>
 Abra o seu terminal, copie e cole os seguintes comandos:<br>
 <br>
 ## **Intslação manual:**<br>
