@@ -1,16 +1,16 @@
 Se o SSH estiver ativado no dispositivo, é possível fazer a adoção de L3 via comando CLI:
-<br>
+
 # 1. Certifique-se de que o dispositivo esteja executando o firmware atualizado. Consulte este guia:  UniFi – Alterando o Firmware de um Dispositivo UniFi.
-<br>
+
 # 2. Certifique-se de que o dispositivo esteja no estado padrão de fábrica. Se não estiver, execute o seguinte comando:
 sudo syswrapper.sh restore-default
-<br>
+
 # 3. SSH no dispositivo e digite o seguinte e pressione enter, substituindo “seutiserver.ml” pelo endereço IP ou hostname do UniFi Controller:
-<br>
+
 set-inform http://seutiserver.ml:8080/inform
-<br>
+
 4. Após a emissão do set-inform, o dispositivo UniFi aparecerá para adoção na seção Dispositivos do controlador. Depois de clicar em  Adotar , o dispositivo vai ficar offline ou com o status de “Adotando”.
-<br>
+
 5. Uma vez que o dispositivo diz que está  adotando  ou fica offline, o que acontecer primeiro, emita o comando  set-inform descrito na etapa 3 novamente. Isso salvará permanentemente o endereço informado e o dispositivo iniciará o provisionamento.
-<br>
-<b>IMPORTANTE: O comando set-inform deve ser emitido duas vezes conforme descrito na etapa 3 e na etapa 5 acima. Caso contrário, o dispositivo se desconectará após adotar.<b>
+
+IMPORTANTE: O comando set-inform deve ser emitido duas vezes conforme descrito na etapa 3 e na etapa 5 acima. Caso contrário, o dispositivo se desconectará após adotar.
