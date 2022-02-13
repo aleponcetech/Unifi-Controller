@@ -17,7 +17,7 @@ apt install ca-certificates wget -y<br>
 wget https://get.glennr.nl/unifi/install/unifi-7.0.22.sh<br>
 bash unifi-7.0.22.sh<br>
 <br>
-## **Intslação com um comando:**
+## **Intslação com um comando:**<br>
 rm unifi-latest.sh &> /dev/null; wget https://get.glennr.nl/unifi/install/install_latest/unifi-latest.sh && bash unifi-latest.sh<br>
 Está com aversão 6.5.55.
 <br>
