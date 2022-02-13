@@ -7,11 +7,18 @@ Através de um Script fica bem fácel de fazer a instalação. O Script tem supo
 
 ## **📡 COMO instalar o UNIFI CONTROLLER**
 <br>
-Testei no Ubuntu 20.04 e Debian 11
+Testei no Ubuntu 20.04 e Debian 11<br>
 Abra o seu terminal, copie e cole os seguintes comandos:<br>
+<br>
+## **Intslação manual:**<br>
 apt update<br>
 apt upgrade<br>
 apt install ca-certificates wget -y<br>
+wget https://get.glennr.nl/unifi/install/unifi-7.0.22.sh<br>
+bash unifi-7.0.22.sh<br>
+<br>
+## **Intslação com um comando:**
 rm unifi-latest.sh &> /dev/null; wget https://get.glennr.nl/unifi/install/install_latest/unifi-latest.sh && bash unifi-latest.sh<br>
+Está com aversão 6.5.55.
 <br>
 
