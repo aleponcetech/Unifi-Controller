@@ -43,7 +43,7 @@ Abra o seu terminal, copie e cole os seguintes comandos:<br>
 ## **Intslação manual:**<br>
 apt update<br>
 apt upgrade<br>
-apt install ca-certificates wget -y<br>
+apt install ca-certificates<br>
 wget https://get.glennr.nl/unifi/install/unifi-7.0.22.sh<br>
 bash unifi-7.0.22.sh<br>
 <br>
