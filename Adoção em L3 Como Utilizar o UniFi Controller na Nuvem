@@ -14,3 +14,13 @@ ficar offline ou com o status de “Adotando”.
 Isso salvará permanentemente o endereço informado e o dispositivo iniciará o provisionamento.
 IMPORTANTE: O comando set-inform deve ser emitido duas vezes conforme descrito na etapa 3 e na etapa 5 acima. Caso contrário, o dispositivo se desconectará 
 após adotar.
+
+
+UniFi SSH Factory Reset
+The last method SSH Factory Reset is quick, but requires SSH access. Process is below:
+
+Access the UAP via SSH
+Issue the commands syswrapper.sh restore-default & set-default & and hit enter
+The UniFi UAP should quickly reboot with factory default settings
+DO NOT disconnect the UAP from power source during this process
+Factory reset complete
